@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Tech Goals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <h1 data-testid="slackDisplayName">AC</h1>
+        </div>
+        <div class="right-nav">
+            <p data-testid="slackEmail">angelchinenye42@gmail.com</p>
+        </div>
+    </nav>
+
+    <header>
+        <section class="left-header">
+            <div class="leftheader-info">
+                <h1>ANGEL CHINENYE</h1>
+                <p>FRONTEND DEVELOPER</p>
+            </div>
+            <img id="leftheader-img" data-testid="slackProfile" src="images/image 9.png" alt="Angel's Slack Profile">
+        </section>
+        <p id="header-summary">I am a junior frontend developer with a passion for creating interactive and dynamic web applications. My goal is to continuously improve my skills and contribute to exciting projects. Currently enrolled in the HNG Internship, I am honing my expertise in HTML, CSS, and JavaScript. I am driven to innovate and deliver seamless user experiences.</p>
+    </header>
+
+    <main>
+    <section id="goals">
+        <h2 class="goals-title">My Tech Goals for the Next 2 Years</h2>
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab(0)">Master Frontend Development</button>
+            <button class="tab-button" onclick="showTab(1)">Build a Portfolio of Projects</button>
+            <button class="tab-button" onclick="showTab(2)">Learn Backend Rudiments</button>
+        </div>
+        <section id="tab-content">
+            <div class="tab-content active">
+                <div class="box-container">
+                    <div class="goalbox1">
+                        <p>In the next year, I aim to improve proficiecy in modern frontend technologies like HTML5, CSS3, JavaScript, and JavaScript frameworks such as React, Nextjs, Angular and Vue.js. I plan to complete at least two advanced online courses and contribute actively to open-source projects on GitHub. This will help me build a network of contacts,learn from experienced developers and give back to the community.</p>
+                    </div>
+                    <div class="goalbox2">
+                        <img id="goal1img" src="images/image 9goal1.png" alt="Animated girldev" >
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="box-container">
+                    <div class="goalbox1">
+                        <p>Establish a strong portfolio demonstrating technical proficiency and creativity, enhancing job prospects and credibility in the industry. Develop and deploy three responsive web applications showcasing diverse skills in design interpretaion, accessibility, and performance optimization. Publish projects on GitHub and personal website, ensuring each project addresses specific client needs or solves real-world problems.</p>
+                    </div>
+                    <div class="goalbox2">
+                        <img src="images/image 9goal2.png" alt="Animated femalecoder" >
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="box-container">
+                    <div class="goalbox1">
+                        <p>By the end of the second year, my goal is to be on track to building and deploying a full-stack application using a backend technology like Node.js or Django, along with a database like MongoDB or PostgreSQL. Ensure that I actively engage in local and online tech communities, participating in workshops, webinars, and hackathons.</p>
+                    </div>
+                    <div class="goalbox2">
+                        <img src="images/image 9goal3.png" alt="Animated female dev learning" >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+        <section>
+            <div class="linkbox-container">
+                <div class="linkbox1">
+                    <h3>Where I am Now</h3>
+                    <p class="current-text">I am currently immersed in the Frontend Development track of the HNG Internship, a pivotal journey where I am honing my skills in HTML, CSS, and JavaScript. This program not only equips me with industry-relevant knowledge but also provides hands-on experience in building responsive and interactive web applications. I am committed to leveraging this opportunity to grow professionally and contribute effectively to innovative web projects.</p>
+                </div>
+                <div class="linkbox2">
+                        <h3>Learning Resources and Tools</h3>
+                        <div class="resource">
+                            <h4 data-testid="hngLink" class="resource-title">HNG Learn</h4>
+                            <p class="resouce-text">HNG Internship offers structured learning paths, mentorship, and real-world projects that are shaping me into a proficient developer. If you're curious about the  experience, feel free to explore more <a href="https://hng.tech/learn" target="_blank" >here.</a></p>
+                        </div>
+                        <div class="resource">
+                            <h4 data-testid="keywordLink" class="resource-title">Keyword.dog</h4>
+                            <p class="resouce-text"><a href="https://keyword.dog" target="_blank" >Keyword.dog</a> has become a go-to tool for discovering trending keywords and content ideas, empowering developers to optimize projects effectively. </p>
+                        </div>
+                        <div class="resource">
+                            <h4 data-testid="scrapeanywebLink" class="resource-title">ScrapeAnyWeb</h4>
+                            <p class="resouce-text">Discover more about <a href="https://scrapeanyweb.site" target="_blank" >ScrapeAnyWeb</a> - an essential tool that allows developers to gather data from various websites efficiently.</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by yours truly! © <span id="year"></span></p>
+    <div class="date-time">
+        <p data-testid="currentDay"><span id="day"></span></p>
+        <p data-testid="currentTimeUTC"><span id="time"></span></p>
+    </div>
+    <img src="images/Peace and Love 🤍.png" alt="white love">
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

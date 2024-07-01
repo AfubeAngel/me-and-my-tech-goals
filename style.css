@@ -1,0 +1,281 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0px 130px;
+    box-sizing: border-box;
+    background-color: #09050F;
+    color: white;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 0px 16px;
+    }
+}
+
+p {
+    color: #999999;
+}
+
+a {
+    color: white;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 32px;
+}
+
+.current-text {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 100px;
+}
+
+left-nav h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 500px;
+    font-size: 40px;
+}
+
+right-nav p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+header {
+    margin-top: 100px;
+
+    @media screen and (max-width:769px) {
+        margin-top: 41px;
+    }
+}
+
+.left-header {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:1024px) {
+        flex-direction: column;
+        gap: 22px;
+    }
+}
+
+.leftheader-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftheader-info h1 {
+    font-size: 120px;
+    line-height: 130px;
+    font-weight: 400;
+    margin: 0px;
+    @media screen and (max-width:769px) {
+        font-size: 56px;
+        line-height: 58px;
+        font-weight: 400;
+    }
+}
+
+.leftheader-info p {
+    font-size: 18px;
+    margin: 0px;
+    @media screen and (max-width:769px) {
+        font-size: 16px;
+    }
+}
+
+#leftheader-img {
+    object-fit: cover;
+}
+
+#header-summary {
+    margin: 74px 0px;
+    @media screen and (max-width:769px) {
+        margin: 48px 0px;
+    }
+}
+
+
+#goals {
+    padding: 56px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    @media screen and (max-width:769px) {
+        padding: 24px 12px;
+    }
+}
+
+.goals-title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    @media screen and (max-width:769px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media screen and (max-width:1024px) {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+.tab-button {
+    background-color: #131311;
+    border-radius: 8px;
+    min-width: 308px;
+    height: 64px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 48px 0px;
+
+    @media screen and (max-width:1024px) {
+        margin: 0px;
+    }
+}
+
+.tab-button:hover {
+    background-color: #542274;
+}
+
+.tab-button.active {
+    background-color: #542274;
+}
+
+.tab-content {
+    display: none;
+    max-width: 1068px;
+    margin: 0 auto;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.box-container {
+    display: flex;
+    gap: 100px;
+
+    @media screen and (max-width:426px) {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.goalbox1 {
+    display: flex;
+    align-items: center;
+}
+
+.goalbox1 p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.goalbox2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goalbox2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .goalbox1 {
+        width: 50%;
+    }
+    .goalbox2 {
+        width: 50%;
+    }
+}
+
+.linkbox-container {
+    display: flex;
+    gap: 39px;
+    margin: 48px 0px 56px 0px;
+
+    @media screen and (max-width:769px) {
+        flex-direction: column;
+        gap: 16px;
+        margin: 48px 0px;
+    }
+}
+
+.linkbox1, .linkbox2 {
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    padding: 56px;
+
+    @media screen and (max-width:769px) {
+        padding: 16px 12px;
+    }
+}
+.linkbox1 {
+    flex: 4.5;
+}
+
+.linkbox2 {
+    flex: 5.5;
+}
+
+.resource-title {
+    font-size: 18px;
+    line-height: 32px;
+    color: #F9F9F9;
+    margin: 0px;
+}
+
+.resource-text {
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 56px 0px;
+}
+
+.date-time {
+    display: flex;
+    gap: 10px;
+}
+
+footer p {
+    margin: 0px;
+}
+
