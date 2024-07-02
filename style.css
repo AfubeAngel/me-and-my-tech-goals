@@ -24,7 +24,6 @@ a {
 h3 {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 32px;
 }
 
 .current-text {
@@ -112,7 +111,6 @@ header {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     @media screen and (max-width:769px) {
         padding: 24px 12px;
     }
@@ -235,6 +233,8 @@ header {
     color: #fff;
     border: none;
     padding: 56px;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (max-width:769px) {
         padding: 16px 12px;
@@ -242,10 +242,20 @@ header {
 }
 .linkbox1 {
     flex: 4.5;
+    gap: 32px;
+}
+
+.linkbox1 h3 {
+    margin: 0px;
 }
 
 .linkbox2 {
     flex: 5.5;
+    gap: 24px;
+}
+
+.linkbox2 h3 {
+    margin: 0px;
 }
 
 .resource-title {
@@ -259,7 +269,7 @@ header {
     font-size: 16px;
     line-height: 32px;
     color: #999999;
-    margin: 0;
+    margin: 0px;
 }
 
 footer {
